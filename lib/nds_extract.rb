@@ -46,10 +46,11 @@ def total_gross(source)
   # return the total
   
   def directors_totals(source)
-    dir_tot = {}
+    this_dir_total = {}
     count = 0
-    
-    dir_tot << ":#{source[count][:name]}"
+    dir_tot = 0
+    while count < 
+    this_dir_total << ":#{source[count][:name]}=>#{dir_tot}"
     
 end
 

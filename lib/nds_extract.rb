@@ -45,26 +45,26 @@ def total_gross(source)
   # returned by directors_totals, and add it to a running total. When done,
   # return the total
   
-  def director_total(source, big_count)
+  def director_total(source, outer_count)
     this_dir_total = 0
     count = 0
     dir_index = source[big_count].length
     while count < dir_index do
-      this_dir_total += source[big_count][:movies][count][:worldwide_gross]
+      this_dir_total += source[outer_count][:movies][count][:worldwide_gross]
       count += 1
     end
     this_dir_total
   end
   
   def big_total(source)
-    big_count = 0
-    big_tot = 0
-    big_index = source.length
-    while big_count < big_index do
-      big_tot += director_total(source, big_count)
-      big_count += 1
+    count = 0
+    tot = 0
+    index = source.length
+    while count < index do
+      tot += director_total(source, count)
+      count += 1
     end
-    big_tot
+    tot
   end
   big_total(source)
 end

@@ -46,7 +46,11 @@ def total_gross(source)
   # return the total
   
   def directors_totals(source)
-    directors names 
+    dir_tot = {}
+    count = 0
+    
+    dir_tot << 
+    
 end
 
 

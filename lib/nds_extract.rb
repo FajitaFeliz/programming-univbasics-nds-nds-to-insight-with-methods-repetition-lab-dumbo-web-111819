@@ -49,7 +49,7 @@ def total_gross(source)
     dir_tot = {}
     count = 0
     
-    dir_tot << 
+    dir_tot << ":#{source[count][:name]}"
     
 end
 
